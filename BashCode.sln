@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BashCode", "BashCode\BashCode.csproj", "{2D6A19D2-A8F8-4FD8-9674-296A833306FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BashCode", "Bash-Code\BashCode.csproj", "{2D6A19D2-A8F8-4FD8-9674-296A833306FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BashCode.Test", "BashCode.Test\BashCode.Test.csproj", "{80A2C590-3A4A-4A06-8713-C19888EBF5F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BashCode.Test", "Bash-Code.Test\BashCode.Test.csproj", "{80A2C590-3A4A-4A06-8713-C19888EBF5F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
