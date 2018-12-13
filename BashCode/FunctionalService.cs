@@ -3,12 +3,8 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    public delegate void Next(IReadOnlyList<string> messages);
-
     public class FunctionalService
     {
-        private const string CodeBase = "ARM";
-
         private readonly IWhateverAdapter whateverAdapter;
 
         public FunctionalService(IWhateverAdapter whateverAdapter)
@@ -21,6 +17,10 @@
             var messages = new List<string>();
             var whateversForTreatment = new List<WhateverModel>();
             var whatevers = this.whateverAdapter.FindAllByLastModification();
+            if (!whatevers.Any())
+            {
+                messages.Add("Aucun whatever trouvé.");
+            }
 
             foreach (var whatever in whatevers)
             {
@@ -30,16 +30,10 @@
                 {
                     messages.Add("whatever déjà traité.");
                 }
-
-                if (step < (int)Step.InProgress)
+                else
                 {
                     whateversForTreatment.Add(whatever);
                 }
-            }
-
-            if (!messages.Any() && !whateversForTreatment.Any())
-            {
-                messages.Add("Aucun whatever trouvé.");
             }
 
             callback(messages);

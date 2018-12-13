@@ -4,8 +4,6 @@
 
     public interface IWhateverAdapter
     {
-        void Create(IReadOnlyList<WhateverModel> whateverModels);
-
         IReadOnlyList<WhateverModel> FindAllByLastModification();
     }
 }

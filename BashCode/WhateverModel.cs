@@ -2,6 +2,6 @@
 {
     public class WhateverModel
     {
-        public int Step;
+        public int Step { get; set; }
     }
 }

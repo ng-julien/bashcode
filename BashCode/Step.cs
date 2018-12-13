@@ -2,10 +2,10 @@
 {
     public enum Step
     {
+        Initial = 0,
+
         InProgress = 1,
 
-        Created = 2,
-
-        Initial = 0
+        Created = 2
     }
 }
