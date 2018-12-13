@@ -46,7 +46,7 @@ namespace BashCode.Test
                 Times.Once);
         }
 
-        public void TriggeredCallBackWithErrorsWhenWhateverModelHasInProgressStep()
+        public void ShouldTriggeredCallBackWithErrorsWhenWhateverModelHasInProgressStep()
         {
             var inProgressWhatever = new WhateverModel { Step = (int)Step.InProgress };
             Mock<IWhateverAdapter> whateverAdapterMock = new Mock<IWhateverAdapter>();
