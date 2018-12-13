@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BashCode\BashCode.csproj" />
+    <ProjectReference Include="..\Bash-Code\BashCode.csproj" />
   </ItemGroup>
 
 </Project>
